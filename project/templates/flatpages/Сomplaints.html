@@ -1,0 +1,14 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+    <h><em>{{ flatpage.title }}</em></h>
+    <hr />
+    <h1><em>{{ flatpage.content }}&nbsp;</em></h1>
+    <p>Уполномоченное лицо: Иванов Иван Сергеевич</p>
+    <p><em>Жалоба производится по телефону: 89165656566</em></p>
+{{ flatpage.content }}
+{% endblock content %}
